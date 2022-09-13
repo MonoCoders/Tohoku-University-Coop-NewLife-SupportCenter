@@ -1,4 +1,61 @@
-iframe[src$=".pdf"]{
-    width:100%;
-    height:80vh;
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 127%;
+}
+#topCategory{
+    text-align: center;
+    font-size: 30px;
+    font: bold;
+
+}
+
+h1{
+    text-align: center;
+}
+#topMokuji {
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    border: 5px solid rgb(73, 138, 250);
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+#topMokuji li {
+    margin-top: 2px;
+    margin-left: 50px;
+}
+
+#beforePage{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#nextPage{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#bottomDiv{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+
+}
+#relatedLinks{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 200px;
 }
