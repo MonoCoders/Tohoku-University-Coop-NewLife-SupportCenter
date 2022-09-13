@@ -52,10 +52,26 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     font-size: 15px;
+    background-color:cornsilk;
 
 }
 #relatedLinks{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 200px;
+}
+.linkLabel{
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: rgba(161, 19, 19, 0.7);
+}
+a:hover{
+    color: rgba(161, 19, 19, 0.3);
+}
+
+body{
+    background-color: antiquewhite;
 }

@@ -1,7 +1,7 @@
 
-const categoryNames = ["ホームページ", "はじめに", "住まい探し","新生活用品", "共済", "ミール", "講座・英語", "デバイス", "入学アルバム", "入学後について"];
+const categoryNames = ["HOME", "はじめに", "住まい探し","新生活用品", "共済", "ミール", "講座・英語", "デバイス", "入学アルバム", "入学後について"];
 const folderNames = ["ホームページ", "Door導入", "住まい", "新生活用品", "共済", "ミール", "講座_英語", "デバイス", "入学アルバム", "入学後の動き"];
-const numberOfImages = [0, 6, 0, 3, 9, 7, 7, 10, 1, 3];
+const numberOfImages = [0, 6, 3, 3, 9, 7, 7, 10, 1, 3];
 const path = ["index.html", "FirstInfo.html","Residence.html","NewLifeGoods.html", "MutualAid.html", "Meal.html", "Lecture_English.html", "Device.html", "EnterAlbam.html", "AfterEnter.html"];
 
 
@@ -16,13 +16,13 @@ function setHTML(pageNumber){
     let beforeA = document.createElement("a");
     beforeA.href = path[pageNumber-1];
     beforePage.id = "beforePage";
-    beforeA.innerHTML = categoryNames[pageNumber-1] + "に戻る";
+    beforeA.innerHTML = "◀" + categoryNames[pageNumber-1] + "に戻る";
     beforePage.appendChild(beforeA);
     document.body.appendChild(beforePage);
 
     // ページ上部の分類
-    let categoryDisplay = document.createElement("div");
-    categoryDisplay.id = "topCategory";
+    let categoryDisplay = document.createElement("h1");
+    //categoryDisplay.id = "topCategory";
     categoryDisplay.innerHTML = categoryNames[pageNumber]
     document.body.appendChild(categoryDisplay);
 
@@ -34,7 +34,7 @@ function setHTML(pageNumber){
     let nextA = document.createElement("a");
     nextA.href = path[(pageNumber+1)%path.length];
     nextPage.id = "nextPage";
-    nextA.innerHTML = categoryNames[(pageNumber+1)%categoryNames.length] + "へ";
+    nextA.innerHTML = categoryNames[(pageNumber+1)%categoryNames.length] + "へ▶";
     nextPage.appendChild(nextA);
     document.body.appendChild(nextPage);
     
@@ -91,6 +91,11 @@ let jsonData = {
         ["入学アルバム", "EnterAlbam.html"],
         ["入学後について", "AfterEnter"]
     ],
+    "FirstInfo":[
+        ["新生活サポートセンター", "https://newlife.u-coop.or.jp/tohoku/"],
+        ["Twitter アカウント", "https://twitter.com/THUv_COOP_SPSN?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3ATHUv_COOP_SPSN%7Ctwcon%5Es2"],
+        ["FLATぶろぐ", "https://newlife.u-coop.or.jp/tohoku/flat/"]
+    ],
     "residence":[
         ["サポセンで住まいを決めるメリット","https://drive.google.com/file/d/1-ygf4DLqm20dIioMJoS6h9mGY6LqhKWK/view?usp=sharing"],
         ["通学時間の地図", "https://drive.google.com/file/d/15IkDOZGlVW65s9oyAoT9wKcfTfZx_fkq/view?usp=sharing"],
@@ -107,7 +112,7 @@ let jsonData = {
         ["Airと光チラシ","https://drive.google.com/file/d/1qP2Imv_vM7wt-EXmzzohT9W-vtL94sbR/view"],	
         ["ネットラミネート","https://drive.google.com/file/d/1XMpbv3B2J0kADkGkhor4ey29CPmehQhC/view"],
         ["防災セットチラシ", "https://drive.google.com/file/d/1zj54-riBo-nrjBeaTgQDdIZW-cf6qhzv/view"],	
-        ["ハヤサカサイクル商品紹介用サイト","http://newlife.u-coop.or.jp/tohoku/standby/bicycle/"]
+        ["ハヤサカサイクル","http://newlife.u-coop.or.jp/tohoku/standby/bicycle/"]
     ],
     "mutualAid":[
         ["学生マンション提案可能商品一覧","https://drive.google.com/file/d/1hvvRkUJQ6Zz_4Aum83k5W3-gc2M1uS6g/view?usp=sharing"],
@@ -152,18 +157,18 @@ let jsonData = {
 }
 
 function setBottom(){
-    const key = ["HomePage","residence", "newlifeGoods", "mutualAid", "meal", "lectureEnglish", "device", "enterAlbam", "afterEnter"];
-    const label = ["ホームページ","住まい探し", "新生活用品", "共済","ミール", "講座・英語", "デバイス", "入学アルバム", "入学後について"]
+    const key = ["HomePage","FirstInfo","residence", "newlifeGoods", "mutualAid", "meal", "lectureEnglish", "device", "enterAlbam", "afterEnter"];
+    const label = ["HOME","はじめに","住まい探し", "新生活用品", "共済","ミール", "講座・英語", "デバイス", "入学アルバム", "入学後について"]
     let bottom = document.createElement("div");
     bottom.id = "bottomDiv";
 
     for(let i = 0; i < key.length; i++){
         let divElement = document.createElement("div");
         let data = jsonData[key[i]];
-        divElement.innerHTML = `<h3>${label[i]}</h3>`;
+        divElement.innerHTML = `<h3><a href="${path[i]}" class="linkLabel">${label[i]}</a></h3>`
         for(let j = 0; j < data.length; j++){
             let link = document.createElement("div");
-            link.innerHTML = `<a href="${data[j][1]}">${data[j][0]}</a>`;
+            link.innerHTML = `<a href="${data[j][1]}">▶${data[j][0]}</a>`;
             divElement.appendChild(link);
         }
         bottom.appendChild(divElement);
