@@ -20,26 +20,13 @@ h1{
     width: 300px;
     height: 240px;
     padding: 20px;
-    border: 5px solid rgb(73, 138, 250);
+    border: 5px solid rgb(177, 177, 177);
     box-sizing: border-box;
     margin-left: 300px;
 }
 #topMokuji li {
     margin-top: 2px;
     margin-left: 50px;
-}
-
-#beforePage{
-    text-align: left;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-#nextPage{
-    text-align: right;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: 20px;
 }
 
 #bottomDiv{
@@ -60,12 +47,32 @@ h1{
     margin-bottom: 30px;
     margin-top: 200px;
 }
-.linkLabel{
-    text-decoration: none;
-    color: black;
-}
+
 a{
     text-decoration: none;
+}
+
+.linkLabel{
+    color: black;
+}
+a.mokuji{
+    color:blue;
+}
+
+#beforePage{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#nextPage, #nextPage{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+a{
     color: rgba(161, 19, 19, 0.7);
 }
 a:hover{

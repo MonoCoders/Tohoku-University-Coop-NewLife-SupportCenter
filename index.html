@@ -6,28 +6,45 @@
     <link rel="stylesheet" href="common.css">
     <script src="background.js"></script>
 
-    <title>新生活サポートセンター</title>
+    <title>東北大学生協新生活サポートセンター</title>
 </head>
 <body>
     <h1>
         新生活サポートセンター オンライン提案資料
     </h1>
-    <ol id="topMokuji">
-    <li><a href="FirstInfo.html">はじめに</a></li>
-    <li><a href="Residence.html">住まい探し</a></li>
-    <li><a href="NewLifeGoods.html">生活用品</a><br></li>
-    <li><a href="MutualAid.html">共済</a><br></li>
-    <li><a href="Meal.html">ミールカード</a><br></li>
-    <li><a href="Lecture_English.html">講座・英語</a><br></li>
-    <li><a href="Device.html">PC・iPad</a><br></li>
-    <li><a href="AfterEnter.html">入学後について</a><br></li>
-    </ol>
-    
+    <div id="indexPageTop">
+        <div>
+            <ol id="topMokuji">
+                <li><a href="FirstInfo.html" class="mokuji">はじめに</a></li>
+                <li><a href="Residence.html" class="mokuji">住まい探し</a></li>
+                <li><a href="NewLifeGoods.html" class="mokuji">生活用品</a><br></li>
+                <li><a href="MutualAid.html" class="mokuji">共済</a><br></li>
+                <li><a href="Meal.html" class="mokuji">ミールカード</a><br></li>
+                <li><a href="Lecture_English.html" class="mokuji">講座・英語</a><br></li>
+                <li><a href="Device.html" class="mokuji">PC・iPad</a><br></li>
+                <li><a href="AfterEnter.html" class="mokuji">入学後について</a><br></li>
+            </ol>
+        </div>
+<!--   <div>
+            適切な画像を入れる
+            <img src="" alt="">
+        </div>
+-->
+    </div>
+
+    <div id="nextPage"></div>
+
     <h2 id="relatedLinks">関連リンク</h2>
     <div id="bottomDiv">
     </div>
     <script type="text/javascript">
-
+            // 次のページへのリンク
+        let pageNumber = 0;
+        let nextPage = document.getElementById("nextPage");
+        let nextA = document.createElement("a");
+        nextA.href = path[(pageNumber+1)%path.length];
+        nextA.innerHTML = categoryNames[(pageNumber+1)%categoryNames.length] + "へ▶";
+        nextPage.appendChild(nextA);
         setBottom();
     </script>
 

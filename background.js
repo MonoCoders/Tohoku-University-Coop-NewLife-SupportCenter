@@ -168,7 +168,7 @@ function setBottom(){
         divElement.innerHTML = `<h3><a href="${path[i]}" class="linkLabel">${label[i]}</a></h3>`
         for(let j = 0; j < data.length; j++){
             let link = document.createElement("div");
-            link.innerHTML = `<a href="${data[j][1]}">▶${data[j][0]}</a>`;
+            link.innerHTML = `<a href="${data[j][1]}" class="bottomLink">▶${data[j][0]}</a>`;
             divElement.appendChild(link);
         }
         bottom.appendChild(divElement);
