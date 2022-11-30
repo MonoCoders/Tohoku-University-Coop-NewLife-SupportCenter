@@ -1,7 +1,7 @@
 
 const categoryNames = ["HOME", "はじめに", "住まい探し", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"];
 const folderNames = ["ホームページ", "Door導入", "住まい", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後の動き"];
-const numberOfImages = [0, 6, 3, 3, 9, 7, 7, 10, 1, 3];
+const numberOfImages = [0, 6, 3, 3, 9, 4, 17, 1, 3];
 const path = ["index.html", "FirstInfo.html", "Residence.html", "NewLifeGoods.html", "MutualAid.html", "Meal.html", "Study.html", "EnterAlbam.html", "AfterEnter.html"];
 
 
@@ -25,7 +25,7 @@ function setHTML(pageNumber) {
     //categoryDisplay.id = "topCategory";
     categoryDisplay.innerHTML = categoryNames[pageNumber]
     document.body.appendChild(categoryDisplay);
-
+    
     // Doorの画像挿入
     setImages(folderNames[pageNumber], numberOfImages[pageNumber]);
 
@@ -82,7 +82,7 @@ function setImages(folderName, numberOfImages) {
 
 
 function setBottom() {
-    const key = ["HomePage", "FirstInfo", "residence", "newlifeGoods", "mutualAid", "meal", "Study2", "enterAlbam", "afterEnter"];
+    const key = ["HomePage", "FirstInfo", "residence", "newlifeGoods", "mutualAid", "meal", "Study", "enterAlbam", "afterEnter"];
     const label = ["HOME", "はじめに", "住まい探し", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"]
     let bottom = document.createElement("div");
     bottom.id = "bottomDiv";
