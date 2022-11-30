@@ -169,10 +169,6 @@ let jsonData = {
             "https://drive.google.com/file/d/1_Rs6cdzeiK_O2h_B-0HPd9KNtR1dVDYd/view"
         ],
         [
-            "オンライン予約者フォルダ",
-            "https://drive.google.com/drive/folders/1iJyoCisuvygR0zG4pK8XrcIbsXmU5pe2"
-        ],
-        [
             "ジオラマ(Google Earth)：東北大周辺地区",
             "https://earth.google.com/earth/d/1TISkU-AOrmdFZnbPYm93jiP4xmvFXOsE?usp=sharing"
         ],
@@ -204,10 +200,7 @@ let jsonData = {
             "ふらっとブログ：通学のしやすさ編",
             "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
         ],
-        [
-            "不動産LINEアカウント　QRコード",
-            "https://drive.google.com/file/d/1-AcU7teFTangCgPsUQG2TnUuFg_9DJij/view?usp=share_link"
-        ]
+
     ],
     "newlifeGoods": [
         [
@@ -218,16 +211,16 @@ let jsonData = {
             "NHK申込書記入例",
             "https://drive.google.com/file/d/1H8sZ94FtuZ7bN7zADX9OpjIcCFn7OKxO/view"
         ],
-        [
-            "光チラシ",
-            "インターネットのラミネート作成後"
-        ],
+        // [
+        //     "SoftBank Airチラシ",
+        //     "インターネットのラミネート作成後"
+        // ],
         [
             "防災セットチラシ",
             "https://drive.google.com/file/d/1smKn6YIulJ2S8z-Qz_73Z7KoSxSLEDMX/view"
         ],
         [
-            "ハヤサカサイクル※",
+            "ハヤサカサイクル",
             "http://newlife.u-coop.or.jp/tohoku/standby/bicycle/"
         ]
     ],
