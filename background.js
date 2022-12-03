@@ -252,10 +252,7 @@ let jsonData = {
         ]
     ],
     "Study": [
-        [
-            "メサロフォローについて",
-            "https://docs.google.com/document/d/181-XFhkhAh_TwlORervFVF7cDjdFas803GLxcBkZKhA/edit"
-        ],
+
         [
             "AO2期生用英語教材ラミネート",
             "https://drive.google.com/file/d/1zfxSYzMwL2ye85E2nffTVRFZInHSCCkR/view?usp=sharing"
