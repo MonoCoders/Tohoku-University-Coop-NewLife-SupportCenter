@@ -239,6 +239,10 @@ let jsonData = {
         [
             "110番パンフレット",
             "https://drive.google.com/file/d/1TqMZCkPo-y_PQsPX9N8v7qOBlJnCFwMx/view?usp=share_link"
+        ],
+        [
+            "Web加入手続きの流れ",
+            "https://drive.google.com/file/d/1fUgb0t2UBORAoaf7e1kawQTm0GIvr0vz/view"
         ]
     ],
     "meal": [
@@ -249,6 +253,10 @@ let jsonData = {
         [
             "ミール自炊大変ラミネート",
             "https://drive.google.com/file/d/1yIbf0RJguslKIMrzSx9rDjH9I2XYfsBi/view"
+        ],
+        [
+            "ミール プランの使用例ラミネート",
+            "https://drive.google.com/file/d/1qSNaFKWb3KJEXBb_Fh_sI9SqXqie1Kzj/view?usp=share_link"
         ]
     ],
     "Study": [
