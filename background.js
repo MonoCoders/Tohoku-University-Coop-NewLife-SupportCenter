@@ -126,7 +126,11 @@ let jsonData = {
         ],
         [
             "講座・PC",
-            "Study.html"
+            "Study_1.html"
+        ],
+        [
+            "デバイス",
+            "Device.html"
         ],
         [
             "入学アルバム",
@@ -162,7 +166,7 @@ let jsonData = {
         ],
         [
             "物件が決まったら",
-            "https://drive.google.com/file/d/1_Rs6cdzeiK_O2h_B-0HPd9KNtR1dVDYd/view"
+            "https://drive.google.com/file/d/1CUMhyif4b7DNuoP5LYvtk0CtMbYWs1zs/view"
         ],
         [
             "ジオラマ(Google Earth)：東北大周辺地区",
@@ -195,8 +199,7 @@ let jsonData = {
         [
             "ふらっとブログ：通学のしやすさ編",
             "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
-        ],
-
+        ]
     ],
     "newlifeGoods": [
         [
@@ -207,10 +210,10 @@ let jsonData = {
             "NHK申込書記入例",
             "https://drive.google.com/file/d/1H8sZ94FtuZ7bN7zADX9OpjIcCFn7OKxO/view"
         ],
-        // [
-        //     "SoftBank Airチラシ",
-        //     "インターネットのラミネート作成後"
-        // ],
+        [
+            "SoftBank Air チラシ",
+            "https://drive.google.com/file/d/16H9xrxLwe1gsCNHlou1n3TN5ATdMF_-H/view"
+        ],
         [
             "防災セットチラシ",
             "https://drive.google.com/file/d/1smKn6YIulJ2S8z-Qz_73Z7KoSxSLEDMX/view"
@@ -240,8 +243,12 @@ let jsonData = {
     ],
     "meal": [
         [
-            "2023ファーストピーク用提案ラミネート",
+            "ファーストピーク用提案ラミネート",
             "https://drive.google.com/file/d/1OLIWMIzQEl0gnNM321npJUMQXymC-g1b/view"
+        ],
+        [
+            "ミール自炊大変ラミネート",
+            "https://drive.google.com/file/d/1yIbf0RJguslKIMrzSx9rDjH9I2XYfsBi/view"
         ]
     ],
     "Study": [
@@ -295,79 +302,3 @@ let jsonData = {
         ]
     ]
 }
-// {
-//     "HomePage": [
-//         ["はじめに", "FirstInfo.html"],
-//         ["住まい探し", "Residence.html"],
-//         ["新生活用品", "NewLifeGoods.html"],
-//         ["共済", "MutualAid.html"],
-//         ["ミール", "Meal.html"],
-//         ["講座・英語", "Study_1.html"],
-//         ["デバイス", "Study_2.html"],
-//         ["入学アルバム", "EnterAlbam.html"],
-//         ["入学後について", "AfterEnter.html"]
-//     ],
-//     "FirstInfo": [
-//         ["新生活サポートセンター", "https://newlife.u-coop.or.jp/tohoku/"],
-//         ["Twitter アカウント", "https://twitter.com/THUv_COOP_SPSN?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3ATHUv_COOP_SPSN%7Ctwcon%5Es2"],
-//         ["FLATぶろぐ", "https://newlife.u-coop.or.jp/tohoku/flat/"]
-//     ],
-//     "residence": [
-//         ["サポセンで住まいを決めるメリット", "https://drive.google.com/file/d/1-ygf4DLqm20dIioMJoS6h9mGY6LqhKWK/view?usp=sharing"],
-//         ["通学時間の地図", "https://drive.google.com/file/d/15IkDOZGlVW65s9oyAoT9wKcfTfZx_fkq/view?usp=sharing"],
-//         ["物件が決まったら", "https://drive.google.com/file/d/15IkDOZGlVW65s9oyAoT9wKcfTfZx_fkq/view?usp=sharing"],
-//         ["ジオラマ", "https://earth.google.com/earth/d/1TISkU-AOrmdFZnbPYm93jiP4xmvFXOsE?usp=sharing"],
-//         ["住まい検索サイト", "https://sumai.tohoku.u-coop.or.jp/map/?type_id=1&lat=38.25910772268097&lng=140.8521579927633"]
-
-//     ],
-//     "newlifeGoods": [
-//         ["モデルルーム資料", "https://drive.google.com/drive/folders/1Fi-_4hmvBaZNFaAH2L-Ps12QAP6tV79M"],
-//         ["NHK申込書記入例", "https://drive.google.com/file/d/1ids7UJC4QGYVM4sqDFp5pYu_qm1EY2wI/view"],
-//         ["Softbank 光について", "https://drive.google.com/drive/folders/1Fi-_4hmvBaZNFaAH2L-Ps12QAP6tV79M"],
-//         ["ネット提案導入", "https://drive.google.com/drive/folders/17ZZiFqzeHeENXqjKxICKZddcrTCGgmU-"],
-//         ["Airと光チラシ", "https://drive.google.com/file/d/1qP2Imv_vM7wt-EXmzzohT9W-vtL94sbR/view"],
-//         ["ネットラミネート", "https://drive.google.com/file/d/1XMpbv3B2J0kADkGkhor4ey29CPmehQhC/view"],
-//         ["防災セットチラシ", "https://drive.google.com/file/d/1zj54-riBo-nrjBeaTgQDdIZW-cf6qhzv/view"],
-//         ["ハヤサカサイクル", "http://newlife.u-coop.or.jp/tohoku/standby/bicycle/"]
-//     ],
-//     "mutualAid": [
-//         ["学生マンション提案可能商品一覧", "https://drive.google.com/file/d/1hvvRkUJQ6Zz_4Aum83k5W3-gc2M1uS6g/view?usp=sharing"],
-//         ["比較検討用資料", "https://drive.google.com/file/d/1rDBFj1gkrclpIYIPwj5MDr_snTyoeQ3X/view?usp=sharing"],
-//         ["加入申込書記入例", "https://drive.google.com/file/d/1HBR5hhV8gqKbOafTYGGc62IoXzHSqZhr/view?usp=sharing"],
-//         ["共済パンフ_保障内容抜粋版", "https://drive.google.com/file/d/1yyINlDiirGbYD7NrVriVKVHLVL_i1riE/view?usp=sharing"],
-//         ["給付事例集", "https://drive.google.com/file/d/1FNx3N5Qw4fR2zfAlo0cvV-nnl629dGLE/view?usp=sharing"],
-//         ["110番パンフレット", "https://drive.google.com/file/d/1x7rnvsV8g_53wUKGJ7RaxADq_Qs8Bubc/view?usp=sharing"]
-//     ],
-//     "meal": [
-//         ["2022食堂コレクションラミネート", "https://drive.google.com/file/d/1PJUghX43NGiNfK5bxLhcoL3waXTEkhA3/view?usp=sharing"],
-//         ["2022自炊大変ラミネート", "https://drive.google.com/file/d/18SlT1N1mVwjf78URkBisxBGLoSklpDlv/view?usp=sharing"],
-//         ["2022コロナ対策ラミネート", "https://drive.google.com/file/d/1oDlNE33EVu5V1Z3j0RFU3NbheCcOAI3k/view?usp=sharing"],
-//         ["2022東北大生協ミールカード細則", "https://drive.google.com/file/d/1Dk5MxWoq_7ltmDUI0avz1NdoH9QhCdku/view?usp=sharing"],
-//         ["2022学部別時間割と食生活", "https://drive.google.com/file/d/1VvHHIN1j5mWn6_bAgao8k3scRcy4lzVb/view?usp=sharing"],
-//         ["2022月払いミールラミネート", "https://drive.google.com/file/d/1E0-a18fKADKjzkCY_nw90V7M1KCxQo2b/view?usp=sharing"]
-//     ],
-//     "Study_1": [
-//         ["時間割表（医学系）", "https://drive.google.com/file/d/10GjtcfToK4B4Ry_Nw75-9yE2nQALaxI3/view?usp=sharing"],
-//         ["時間割表（理系）", "https://drive.google.com/file/d/1RdIGAJfdpNHJGkTaxs91TaaQQqBOTGQe/view?usp=sharing"],
-//         ["時間割表（文系）", "https://drive.google.com/file/d/1_FxPEh3XLyczNfMOL6puYzD62JkVXbSJ/view?usp=sharing"],
-//         ["創造発見塾申込者ハガキ", "https://drive.google.com/drive/folders/1SxQ9JfkEKD5I1OAje-jiDQPHGxHXDwoE"],
-//         ["創造発見塾申込者ハガキ", "https://drive.google.com/drive/folders/1SxQ9JfkEKD5I1OAje-jiDQPHGxHXDwoE"],
-//         ["AO2期生用英語教材ラミネート", "https://drive.google.com/file/d/1zfxSYzMwL2ye85E2nffTVRFZInHSCCkR/view?usp=sharing"],
-//         ["TOEFLITP500点ラミネート", "https://drive.google.com/file/d/1RqfAIBS9j9ezJVO8iLoRczjS6jPK89Ny/view?usp=sharing"]
-//     ],
-//     "Study_2": [
-//         ["PC提案分岐ラミネート", "https://drive.google.com/file/d/1AmCf4aPu8zY8LeWvmU2lAzXu2nyTgpqz/view?usp=sharing"],
-//         ["学部別PCスペック表", "https://drive.google.com/file/d/1PkI-AxuY6ofJa8okfd0r9ztz6q6JLTJC/view?usp=sharing"],
-//         ["PC・iPad修理事例", "https://drive.google.com/file/d/1zJl-oVnoNleEDqhM318KMTimIvYgoTkw/view?usp=sharing"],
-//         ["DECS RS集", "https://drive.google.com/file/d/1L3tO1J-74z3nfEwMpSWbdjhEiFRGYct-/view?usp=sharing"],
-//         ["創造発見塾・ビジョンNavi・申込者専用ページ(ファースト用)", "https://drive.google.com/file/d/1vLv5zdl59r1I1e-buiJOD3cMA4lR6ojM/view?usp=sharing"],
-//         ["メサロフォローについて", "https://docs.google.com/document/d/181-XFhkhAh_TwlORervFVF7cDjdFas803GLxcBkZKhA/edit"]
-//     ],
-//     "enterAlbam": [
-//         ["入学アルバム", "https://drive.google.com/file/d/1cMqPgeEtxa_c0MbZSTmWhK3NhwquAd6B/view?usp=sharing"]
-//     ],
-//     "afterEnter": [
-
-//     ]
-
-// }
