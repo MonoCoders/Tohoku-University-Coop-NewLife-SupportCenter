@@ -125,12 +125,8 @@ let jsonData = {
             "Meal.html"
         ],
         [
-            "講座・PC",
-            "Study_1.html"
-        ],
-        [
-            "デバイス",
-            "Device.html"
+            "学業商品",
+            "Study.html"
         ],
         [
             "入学アルバム",
