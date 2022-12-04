@@ -291,6 +291,22 @@ let jsonData = {
         [
             "PC・iPad修理事例",
             "https://drive.google.com/file/d/1zJl-oVnoNleEDqhM318KMTimIvYgoTkw/view?usp=sharing"
+        ],
+        [
+            "PCフルサポートライセンス約款",
+            "https://drive.google.com/file/d/1y66HYHC2z-tVDW3hCyw1qPPbwfBiRFwF/view"
+        ],
+        [
+            "電子書籍約款：電子書籍本体",
+            "https://drive.google.com/file/d/1MATuosl9oIDfgSLdBv1i86yjugLqI88M/view"
+        ],
+        [
+            "電子書籍約款：個人情報",
+            "https://drive.google.com/drive/u/0/folders/1fwoucuJsUm2jrPwBARh6labGD7ufI0Yv"
+        ],
+        [
+            "iPadフルサポートライセンス約款",
+            "https://drive.google.com/file/d/1OYK8eTzNAa-e9jJz-JzTP7-lWJOd1eby/view"
         ]
     ],
     "enterAlbam": [
