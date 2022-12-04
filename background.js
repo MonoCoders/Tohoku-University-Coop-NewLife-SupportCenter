@@ -277,6 +277,10 @@ let jsonData = {
             "https://www.tohoku.u-coop.or.jp/app/entry/?cd=EnnjvPW0"
         ],
         [
+            "スタートアップ講座約款",
+            "https://drive.google.com/file/d/1F2ZZlu5IIUx8iodIdPO5RQXw-mnt2wpk/view"
+        ],
+        [
             "AO2期生用英語教材ラミネート",
             "https://drive.google.com/file/d/1zfxSYzMwL2ye85E2nffTVRFZInHSCCkR/view?usp=sharing"
         ],
