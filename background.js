@@ -1,5 +1,5 @@
 
-const categoryNames = ["HOME", "はじめに", "住まい探し", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"];
+const categoryNames = ["HOME", "はじめに", "住まいさがし", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"];
 const folderNames = ["ホームページ", "Door導入", "住まい", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後の動き"];
 const numberOfImages = [0, 6, 3, 3, 9, 4, 17, 1, 3];
 const path = ["index.html", "FirstInfo.html", "Residence.html", "NewLifeGoods.html", "MutualAid.html", "Meal.html", "Study.html", "EnterAlbam.html", "AfterEnter.html"];
@@ -83,7 +83,7 @@ function setImages(folderName, numberOfImages) {
 
 function setBottom() {
     const key = ["HomePage", "FirstInfo", "residence", "newlifeGoods", "mutualAid", "meal", "Study", "enterAlbam", "afterEnter"];
-    const label = ["HOME", "はじめに", "住まい探し", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"]
+    const label = ["HOME", "はじめに", "住まいさがし", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"]
     let bottom = document.createElement("div");
     bottom.id = "bottomDiv";
 
@@ -153,6 +153,26 @@ let jsonData = {
         [
             "ふらっとブログ",
             "https://newlife.u-coop.or.jp/tohoku/flat/"
+        ],
+        [
+            "ふらっとブログ：安心・安全編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2350"
+        ],
+        [
+            "ふらっとブログ：家賃編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2361"
+        ],
+        [
+            "ふらっとブログ：設備編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2346"
+        ],
+        [
+            "ふらっとブログ：食事編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2367"
+        ],
+        [
+            "ふらっとブログ：通学のしやすさ編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
         ]
     ],
     "residence": [
@@ -179,26 +199,6 @@ let jsonData = {
         [
             "住まい検索サイト",
             "https://sumai.tohoku.u-coop.or.jp/map/?type_id=1&lat=38.25910772268097&lng=140.8521579927633\n"
-        ],
-        [
-            "ふらっとブログ：安心・安全編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2350"
-        ],
-        [
-            "ふらっとブログ：家賃編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2361"
-        ],
-        [
-            "ふらっとブログ：設備編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2346"
-        ],
-        [
-            "ふらっとブログ：食事編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2367"
-        ],
-        [
-            "ふらっとブログ：通学のしやすさ編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
         ]
     ],
     "newlifeGoods": [

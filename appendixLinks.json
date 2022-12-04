@@ -49,6 +49,26 @@
         [
             "ふらっとブログ",
             "https://newlife.u-coop.or.jp/tohoku/flat/"
+        ],
+        [
+            "ふらっとブログ：安心・安全編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2350"
+        ],
+        [
+            "ふらっとブログ：家賃編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2361"
+        ],
+        [
+            "ふらっとブログ：設備編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2346"
+        ],
+        [
+            "ふらっとブログ：食事編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2367"
+        ],
+        [
+            "ふらっとブログ：通学のしやすさ編",
+            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
         ]
     ],
     "residence": [
@@ -75,26 +95,6 @@
         [
             "住まい検索サイト",
             "https://sumai.tohoku.u-coop.or.jp/map/?type_id=1&lat=38.25910772268097&lng=140.8521579927633\n"
-        ],
-        [
-            "ふらっとブログ：安心・安全編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2350"
-        ],
-        [
-            "ふらっとブログ：家賃編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2361"
-        ],
-        [
-            "ふらっとブログ：設備編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2346"
-        ],
-        [
-            "ふらっとブログ：食事編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2367"
-        ],
-        [
-            "ふらっとブログ：通学のしやすさ編",
-            "https://newlife.u-coop.or.jp/tohoku/flat/?p=2371"
         ]
     ],
     "newlifeGoods": [
