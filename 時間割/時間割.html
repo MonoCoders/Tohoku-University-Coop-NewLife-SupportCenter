@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>東北大生の時間割！〜時間割例編〜</h1>
+    <p>本ブログでは、東北大学の各学部・学科ごとの時間割を紹介いたします。<br>学部．学科をクリックして、移動してください！</p>
     <button onclick="window.scrollTo(0, 0);">上に戻る</button>
     <div class="">
         <h3>文系</h3>
@@ -45,7 +46,9 @@
             <li><a href="#nougaku">農学部</a></li>
         </ul>
     </div>
-    
+    <!--ここのつながりをきれいにしたい-->
+
+    <br>
     <!-- もともとテーブルにしていました． -->
     <!--
         
@@ -181,17 +184,31 @@
         text-decoration:none;
     }
 
+    a:hover {
+        background: #aaaaaa;
+        color: white;
+    }
     button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        border: none;
+        background-color: #eb6100;
         position: fixed;
         bottom: 10px;
         right: 10px;
+        font-size: 18px;
+        border-radius :8px;/*角の丸み*/
     } 
+    button:hover {
+        background: #ff9042;
+    }
 
     table {
         border-collapse: collapse;
         border-spacing: 0;
     }
-
+    
     th, td {
         width:300px; 
         padding: 10px;
@@ -213,7 +230,7 @@
     ul, ol {
         color: #1e366a;
         border-top: solid #1e366a 1px;/*上のボーダー*/
-        border-bottom: solid #1e366a 1px;/*下のボーダー*/
+        /*border-bottom: solid #1e366a 1px; 下のボーダー*/
         padding: 0.5em 0 0.5em 1.5em;
     }
 
