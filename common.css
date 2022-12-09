@@ -1,4 +1,27 @@
+/*基本設定*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #f6f8fa;*/
+}
 
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color: #aaaaaa;
+}
+
+/*ページのタイトル*/
+h1{
+    text-align: left;
+    /*margin-left: 10%;*/
+    padding: 40px;
+    background-color: white;
+}
 img{
     display: block;
     margin-left: auto;
@@ -6,59 +29,24 @@ img{
     width: 90%;
     /*height: 127%;*/
 }
-#topCategory{
-    text-align: center;
-    font-size: 30px;
-    font: bold;
 
-}
 
-h1{
-    text-align: center;
+/*目次*/
+#indexPageTop{
+    padding: 30px;
+    font-size: 18px;
+    margin: 20px;
+    background-color: #f6f8fa;
 }
-#topMokuji {
-    width: 300px;
-    height: 240px;
-    padding: 20px;
-    border: 5px solid rgb(177, 177, 177);
-    box-sizing: border-box;
-    margin-left: 300px;
+.mokuji{
+    padding: 1px;
 }
-#topMokuji li {
-    margin-top: 2px;
-    margin-left: 50px;
-}
-
-#bottomDiv{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    column-gap: 20px;
-    row-gap: 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 15px;
-    background-color:cornsilk;
-
-}
-#relatedLinks{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 200px;
-}
-
-a{
-    text-decoration: none;
-}
-
 .linkLabel{
     color: black;
 }
-a.mokuji{
-    color:blue;
-}
 
+
+/*次のページに移動する案内*/
 #beforePage{
     text-align: left;
     margin-left: 30px;
@@ -72,13 +60,63 @@ a.mokuji{
     font-size: 20px;
 }
 
-a{
-    color: rgba(161, 19, 19, 0.7);
+
+/*関連リンク*/
+#footer_Div{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    background-color:white;
+    padding: 10px
 }
-a:hover{
-    color: rgba(161, 19, 19, 0.3);
+#footer_Div h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;
+}
+#footer_Div a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+#footer_Div a:hover {
+    background-color: #eee;
+}
+#relatedLinks{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 200px;
 }
 
-body{
-    background-color: antiquewhite;
+
+
+
+#topCategory{
+    text-align: center;
+    font-size: 30px;
+    font: bold;
+}
+
+
+/*一番上に行くためのボタン*/
+button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: #eb6100;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    border-radius :8px;/*角の丸み*/
+} 
+button:hover {
+    background: #ff9042;
 }

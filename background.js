@@ -85,7 +85,7 @@ function setBottom() {
     const key = ["HomePage", "FirstInfo", "residence", "newlifeGoods", "mutualAid", "meal", "Study", "enterAlbam", "afterEnter"];
     const label = ["HOME", "はじめに", "住まいさがし", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"]
     let bottom = document.createElement("div");
-    bottom.id = "bottomDiv";
+    bottom.id = "footer_Div";
 
     for (let i = 0; i < key.length; i++) {
         let divElement = document.createElement("div");
