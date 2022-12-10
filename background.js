@@ -261,16 +261,8 @@ let jsonData = {
     ],
     "Study": [
         [
-            "時間割表（医学系）",
-            "https://drive.google.com/file/d/1VWOi_H17uEX0PuXP6X-UWFFCJlQeJomC/view?usp=share_link"
-        ],
-        [
-            "時間割表（理系）",
-            "https://drive.google.com/file/d/1ADN4cJ1BUlg9AbLPK_0HIU7AHJ6oEjaA/view?usp=share_link"
-        ],
-        [
-            "時間割表（文系）",
-            "https://drive.google.com/file/d/1GtSdGa257fupbhTDcw16xjXO1uyBbWnW/view?usp=share_link"
+            "時間割表",
+            "https://monocoders.github.io/Tohoku-University-Coop-NewLife-SupportCenter/%E6%99%82%E9%96%93%E5%89%B2/%E6%99%82%E9%96%93%E5%89%B2.html"
         ],
         [
             "講座メールアドレス登録",
