@@ -220,7 +220,7 @@ let jsonData = {
     ],
     "newlifeGoods": [
         [
-            "家具家電チラシ",
+            "家具・家電チラシ",
             "https://drive.google.com/file/d/1w9pAJLErPaGH0X046GKyxt5Pl0Z5I24X/view"
         ],
         [
@@ -268,7 +268,7 @@ let jsonData = {
     ],
     "meal": [
         [
-            "ファーストピーク用提案ラミネート",
+            "提案ラミネート",
             "https://drive.google.com/file/d/1OLIWMIzQEl0gnNM321npJUMQXymC-g1b/view"
         ],
         [
