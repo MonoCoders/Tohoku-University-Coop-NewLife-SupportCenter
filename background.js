@@ -134,7 +134,7 @@ let jsonData = {
         ],
         [
             "入学後について",
-            "AfterEnter"
+            "AfterEnter.html"
         ]
     ],
     "FirstInfo": [
