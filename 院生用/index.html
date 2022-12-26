@@ -4,18 +4,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../common.css">
-    <link rel="icon" type="../image/png" href="../分割版/icon.png">
-    <script src="../background.js"></script>
-    <script type="text/javascript">
+    <link rel="icon" type="image/png" href="../分割版/icon.png">
+    <script src="background.js"></script>
 
-    </script>
+    <title>東北大学生協新生活サポートセンター</title>
 </head>
-<body>    
-    <script>
-        let pageNumber = 9;
-        setHTML(pageNumber);
+<body>
+    <h1>
+        新生活サポートセンター 院生用オンライン提案資料
+    </h1>
+    <div id="indexPageTop">
+        <div>
+            <ol id="topMokuji">
+                <li><a href="FirstInfo_graduate.html" class="mokuji">はじめに</a></li>
+                <li><a href="Residence_graduate.html" class="mokuji">住まいさがし</a></li>
+                <li><a href="MutualAid_graduate.html" class="mokuji">共済</a><br></li>
+                <li><a href="Study_graduate.html" class="mokuji">学業商品</a><br></li>
+                <li><a href="AfterEnter_graduate.html" class="mokuji">入学後について</a><br></li>
+            </ol>
+        </div>
+<!--   <div>
+            適切な画像を入れる
+            <img src="" alt="">
+        </div>
+-->
+    </div>
+
+    <div id="nextPage"></div>
+
+    <h2 id="relatedLinks">関連リンク</h2>
+    <div id="bottomDiv">
+    </div>
+    <script type="text/javascript">
+            // 次のページへのリンク
+        let pageNumber = 0;
+        let nextPage = document.getElementById("nextPage");
+        let nextA = document.createElement("a");
+        nextA.href = path[(pageNumber+1)%path.length];
+        nextA.innerHTML = categoryNames[(pageNumber+1)%categoryNames.length] + "へ▶";
+        nextPage.appendChild(nextA);
+        setBottom();
     </script>
-    <a href ="../index.html"><button class = "index">ホームへ</button></a>
-    <button class = "top" onclick="window.scrollTo(0, 0);">上に戻る</button>
+
 </body>
 </html>
