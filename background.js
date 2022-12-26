@@ -1,7 +1,7 @@
 
-const categoryNames = ["HOME", "はじめに", "住まいさがし", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について"];
-const folderNames = ["ホームページ", "Door導入", "住まい", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後の動き"];
-const numberOfImages = [0, 6, 3, 3, 9, 4, 17, 1, 3];
+const categoryNames = ["HOME", "はじめに", "住まいさがし", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後について", "大学院生"];
+const folderNames = ["ホームページ", "Door導入", "住まい", "新生活用品", "共済", "ミール", "学業商品", "入学アルバム", "入学後の動き", "院生"];
+const numberOfImages = [0, 6, 3, 3, 9, 4, 17, 1, 3 ,12];
 const path = ["index.html", "FirstInfo.html", "Residence.html", "NewLifeGoods.html", "MutualAid.html", "Meal.html", "Study.html", "EnterAlbam.html", "AfterEnter.html"];
 
 
@@ -11,33 +11,39 @@ const path = ["index.html", "FirstInfo.html", "Residence.html", "NewLifeGoods.ht
  */
 function setHTML(pageNumber) {
     document.title = categoryNames[pageNumber];
-    // 前のページへのリンク
-    let beforePage = document.createElement("div");
-    let beforeA = document.createElement("a");
-    beforeA.href = path[pageNumber - 1];
-    beforePage.id = "beforePage";
-    beforeA.innerHTML = "◀" + categoryNames[pageNumber - 1] + "に戻る";
-    beforePage.appendChild(beforeA);
-    document.body.appendChild(beforePage);
 
-    // ページ上部の分類
-    let categoryDisplay = document.createElement("h1");
-    //categoryDisplay.id = "topCategory";
-    categoryDisplay.innerHTML = categoryNames[pageNumber]
-    document.body.appendChild(categoryDisplay);
-    
-    // Doorの画像挿入
-    setImages(folderNames[pageNumber], numberOfImages[pageNumber]);
+    if(pageNumber != 9){ //院生以外の場合
+        // 前のページへのリンク
+        let beforePage = document.createElement("div");
+        let beforeA = document.createElement("a");
+        beforeA.href = path[pageNumber - 1];
+        beforePage.id = "beforePage";
+        beforeA.innerHTML = "◀" + categoryNames[pageNumber - 1] + "に戻る";
+        beforePage.appendChild(beforeA);
+        document.body.appendChild(beforePage);
 
-    // 次のページへのリンク
-    let nextPage = document.createElement("div");
-    let nextA = document.createElement("a");
-    nextA.href = path[(pageNumber + 1) % path.length];
-    nextPage.id = "nextPage";
-    nextA.innerHTML = categoryNames[(pageNumber + 1) % categoryNames.length] + "へ▶";
-    nextPage.appendChild(nextA);
-    document.body.appendChild(nextPage);
+        // ページ上部の分類
+        let categoryDisplay = document.createElement("h1");
+        //categoryDisplay.id = "topCategory";
+        categoryDisplay.innerHTML = categoryNames[pageNumber]
+        document.body.appendChild(categoryDisplay);
+        
+        // Doorの画像挿入
+        setImages(folderNames[pageNumber], numberOfImages[pageNumber]);
 
+        // 次のページへのリンク
+        let nextPage = document.createElement("div");
+        let nextA = document.createElement("a");
+        nextA.href = path[(pageNumber + 1) % path.length];
+        nextPage.id = "nextPage";
+        nextA.innerHTML = categoryNames[(pageNumber + 1) % categoryNames.length] + "へ▶";
+        nextPage.appendChild(nextA);
+        document.body.appendChild(nextPage);
+    }
+
+    else{//院生の場合:画像のみを出力し，前後のページへの移動は行わない（方針）
+        set_Master_Students_Images(folderNames[pageNumber], numberOfImages[pageNumber])
+    }
 
     let relativeLink = document.createElement("h2");
     relativeLink.id = "relatedLinks";
@@ -72,6 +78,21 @@ function setImages(folderName, numberOfImages) {
             img.src = `分割版/${folderName}/${folderName}-0${i}.png`;
         } else {
             img.src = `分割版/${folderName}/${folderName}-${i}.png`;
+        }
+        img.alt = `${folderName}`;
+        imagesDiv.appendChild(img);
+    }
+    document.body.appendChild(imagesDiv);
+}
+
+function set_Master_Students_Images(folderName, numberOfImages) {
+    let imagesDiv = document.createElement("div");
+    for (let i = 1; i <= numberOfImages; i++) {
+        let img = document.createElement("img");
+        if (i < 10) {
+            img.src = `../分割版/${folderName}/${folderName}-0${i}.png`;
+        } else {
+            img.src = `../分割版/${folderName}/${folderName}-${i}.png`;
         }
         img.alt = `${folderName}`;
         imagesDiv.appendChild(img);
@@ -199,7 +220,7 @@ let jsonData = {
     ],
     "newlifeGoods": [
         [
-            "家具家電チラシ",
+            "家具・家電チラシ",
             "https://drive.google.com/file/d/1w9pAJLErPaGH0X046GKyxt5Pl0Z5I24X/view"
         ],
         [
@@ -247,7 +268,7 @@ let jsonData = {
     ],
     "meal": [
         [
-            "ファーストピーク用提案ラミネート",
+            "提案ラミネート",
             "https://drive.google.com/file/d/1OLIWMIzQEl0gnNM321npJUMQXymC-g1b/view"
         ],
         [
